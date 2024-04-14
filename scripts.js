@@ -31,7 +31,6 @@ document.getElementById('generate').addEventListener('click', function() {
     if (symbols) charset += '!@#$%^&*()_+~`|}{[]:;?><,./-';
     if (spaces) charset += ' ';
   
-    // Ensure there is at least one space in the charset if spaces are included.
     if (spaces && charset.length < length) {
       var spacesToAdd = length - charset.length;
       for (var i = 0; i < spacesToAdd; i++) {
